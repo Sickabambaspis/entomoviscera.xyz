@@ -1,0 +1,77 @@
+* {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #161616;
+    --grey: #606060;
+    --white: #e7e7e7;
+    --red: #ec2a2a;
+    --darkred: #8a0c0c;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--black);
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+header, nav {
+    text-align: center;
+}
+
+nav, main {
+    padding: 15px;
+}
+
+nav a {
+    margin-right: 5px;
+}
+
+h1, h2 {
+    font-family: underwood;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p, a {
+    font-family: "lucida console", monospace, serif;
+    font-size: 1rem;
+}
+
+p {
+    margin: 8px 0;
+}
+
+a {
+    color: var(--red);
+}
+
+a:hover {
+    color: var(--darkred);
+}
+
+#wrapper {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.entry {
+    border: 2px dashed var(--grey);
+    padding: 15px;
+}
+
+@font-face {
+    font-family: underwood;
+    src: url("/assets/fonts/underwood_champion-webfont.woff");
+}

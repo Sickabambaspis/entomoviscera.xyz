@@ -1,0 +1,80 @@
+* {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #161616;
+    --white: #e7e7e7;
+    --red: #ec2a2a;
+    --darkred: #8a0c0c;
+}
+
+body {
+    padding: 25px 15px;
+    background-color: var(--black);
+    background-image: url("/assets/bg/smiley.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main {
+    color: var(--white);
+    background-color: var(--black);
+    background-image: url("/assets/bgtile/paperoverlay.png");
+    padding: 12px 15px;
+    margin: 0 auto;
+    max-width: 80ch;
+}
+
+h1, h2, h3 {
+    font-family: underwood;
+}
+
+h2, h3 {
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p, a {
+    font-family: "lucida console", monospace, serif;
+    font-size: 1rem;
+}
+
+p {
+    margin: 15px 0;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+a:hover {
+    color: var(--darkred);
+}
+
+.return {
+    float: right;
+}
+
+@font-face {
+    font-family: underwood;
+    src: url("/assets/fonts/underwood_champion-webfont.woff");
+}

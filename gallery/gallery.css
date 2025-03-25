@@ -1,0 +1,193 @@
+* {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "lucida console", monospace, serif;
+    color: #ebebeb;
+    background-color: #282828;
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+nav, footer {
+    position: sticky;
+    padding: 8px 12px;
+    background-color: #161616;
+    background-image: url("/assets/bgtile/paperoverlay.png");
+    width: 100%;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 15px 25px;
+}
+
+nav a {
+    font-family: hitmepunk;
+    font-size: 2rem;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    padding: 15px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+footer a {
+    padding-right: 12px;
+}
+
+main {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ebebeb;
+    text-shadow: 4px 4px 2px #000;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+iframe {
+    display: block;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: 65%;
+    margin: 15px auto;
+    border: 0;
+}
+
+#menutoggle {
+    color: #ebebeb;
+    font-size: 48px;
+    text-shadow: 2px 2px 20px #000;
+    display: none;
+    border: 0;
+    background-color: transparent;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox>img {
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    gap: 15px;
+}
+
+.gallery div {
+    height: 200px;
+}
+
+.gallery div:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 415px;
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@font-face {
+    font-family: hitmepunk;
+    src: url("/assets/fonts/Hit-me_-punk_-01.woff");
+}
+
+@media only screen and (width <= 883px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        height: 100vh;
+        z-index: 3;
+        box-shadow: 0 0 12px #000;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    #menutoggle {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 15px;
+        z-index: 2;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery div:first-child {
+        grid-column: initial;
+        grid-row: initial;
+        height: 200px;
+    }
+}
+
+@media only screen and (width <= 500px) {
+    .gallery {
+        grid-template-columns: initial;
+    }
+
+    .gallery div {
+        height: initial;
+    }
+}

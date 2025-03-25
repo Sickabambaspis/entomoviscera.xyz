@@ -1,0 +1,173 @@
+* {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #161616;
+    --grey: #606060;
+    --white: #e7e7e7;
+    --red: #aa1919;
+    --darkred: #510606;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--black);
+    background-image: url("/assets/bg/curcuitboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+footer, nav, main {
+    padding: 12px 15px;
+}
+
+header, footer {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+header {
+    padding: 25px 15px;
+}
+
+nav, main {
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+nav {
+    flex: 1 1 30%;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+main {
+    flex: 1 1 70%;
+    background-color: var(--black);
+}
+
+h1, h2, h3 {
+    font-family: underwood;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p, a {
+    font-family: "lucida console", monospace, serif;
+    font-size: 1rem;
+}
+
+p, main h3 {
+    margin: 12px 0;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+a:hover {
+    color: var(--darkred);
+}
+
+#menutoggle {
+    color: var(--white);
+    font-size: 48px;
+    text-shadow: var(--black) 2px 2px 20px;
+    display: none;
+    border: 0;
+    background-color: transparent;
+}
+
+#menutoggle:active {
+    opacity: 0.8;
+}
+
+#wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sillyborder {
+    border: 2px dashed var(--grey);
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.sillyborder a {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.sillyborder a:hover {
+    opacity: 0.5;
+}
+
+.sillyborder h3 {
+    margin-top: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgtilt {
+    transition: 200ms;
+}
+
+.imgtilt:hover {
+    rotate: 20deg;
+    scale: 1.15;
+}
+
+@font-face {
+    font-family: underwood;
+    src: url("/assets/fonts/underwood_champion-webfont.woff");
+}
+
+@media only screen and (width <= 750px) {
+    main {
+        flex: 1 1 100%;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        height: 100vh;
+        z-index: 3;
+        box-shadow: var(--black) 0 0 12px;
+    }
+
+    #menutoggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+}

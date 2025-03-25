@@ -1,0 +1,124 @@
+* {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "lucida console", monospace, serif;
+    color: #ebebeb;
+    background-color: #282828;
+}
+
+footer {
+    background-color: #161616;
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+nav {
+    flex: 1 1 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 15px 25px;
+    background-image: url("/assets/bg/smiley.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav a {
+    font-size: 2.5rem;
+    font-family: hitmepunk;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    padding: 15px;
+    background-color: #282828;
+    background-image: url("/assets/bgtile/paperoverlay.png");
+    box-shadow: 4px 4px 2px #000;
+    transition: 200ms;
+}
+
+nav a:hover {
+    opacity: 1;
+    rotate: 4deg;
+}
+
+main {
+    flex: 1 1 30%;
+    padding: 15px;
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+footer {
+    flex: 0 1 content;
+    padding: 8px 12px;
+}
+
+footer a {
+    padding-right: 12px;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p, a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+p {
+    margin: 15px 0;
+}
+
+a {
+    color: #ebebeb;
+    text-shadow: 4px 4px 2px #000;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.hf {
+    flex-direction: row;
+    flex: 1 1 100%;
+}
+
+.vf {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+@font-face {
+    font-family: hitmepunk;
+    src: url("/assets/fonts/Hit-me_-punk_-01.woff");
+}
+
+@media only screen and (width <= 800px) {
+    .hf {
+        flex-direction: column;
+    }
+
+    main {
+        flex: 0 1;
+        order: 1;
+    }
+
+    nav {
+        flex: 1 1;
+        order: 2;
+    }
+}

@@ -1,0 +1,99 @@
+* {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #161616;
+    --white: #e7e7e7;
+    --red: #aa1919;
+    --darkred: #510606;
+}
+
+body {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+body, main {
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+main {
+    flex: 1 1 60%;
+    padding: 12px 15px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+aside {
+    flex: 1 1 20%;
+    padding: 10px;
+}
+
+h1, h2, h3, .profile span {
+    font-family: underwood;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p, a {
+    font-family: "lucida console", monospace, serif;
+    font-size: 1rem;
+}
+
+p {
+    margin: 12px 0;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+a:hover {
+    color: var(--darkred);
+}
+
+#wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+.profile {
+    margin: 25px 0 15px 0;
+}
+
+.profile img:first-child {
+    border: 2px solid;
+    rotate: 4deg;
+}
+
+.profile span {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 2px 4px;
+}
+
+@font-face {
+    font-family: underwood;
+    src: url("/assets/fonts/underwood_champion-webfont.woff");
+}

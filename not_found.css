@@ -1,0 +1,81 @@
+* {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #161616;
+    --white: #e7e7e7;
+}
+
+body {
+    font-family: underwood;
+    color: var(--white);
+    background-color: var(--black);
+    background-image: url("/assets/bg/curcuitboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    padding: 25px 15px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+main {
+    background-color: var(--black);
+    padding: 12px 15px;
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+nav {
+    gap: 15px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-family: "lucida console", monospace, serif;
+    font-size: 1rem;
+    margin: 12px 0;
+}
+
+#wrapper {
+    padding: 12px 15px;
+    min-height: calc(100vh - 24px);
+}
+
+.flexcenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.imgtilt {
+    transition: 200ms;
+}
+
+.imgtilt:hover {
+    rotate: 20deg;
+    scale: 1.15;
+}
+
+@font-face {
+    font-family: underwood;
+    src: url("/assets/fonts/underwood_champion-webfont.woff");
+}
