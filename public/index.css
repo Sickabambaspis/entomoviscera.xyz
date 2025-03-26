@@ -147,7 +147,7 @@ a:hover {
     src: url("/assets/fonts/underwood_champion-webfont.woff");
 }
 
-@media only screen and (width <= 750px) {
+@media only screen and (width <= 800px) {
     main {
         flex: 1 1 100%;
     }
