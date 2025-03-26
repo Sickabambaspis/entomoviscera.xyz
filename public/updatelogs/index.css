@@ -69,6 +69,11 @@ a:hover {
 .entry {
     border: 2px dashed var(--grey);
     padding: 15px;
+    margin-bottom: 15px;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
 }
 
 @font-face {
