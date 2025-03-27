@@ -50,7 +50,7 @@ footer a {
 }
 
 main {
-    max-width: 1160px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -127,19 +127,20 @@ iframe {
 }
 
 .gallery div {
-    height: 200px;
+    height: 30vh;
 }
 
 .gallery div:first-child {
     grid-column: span 2;
     grid-row: span 2;
-    height: 415px;
+    height: 60vh;
 }
 
 .gallery img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: 3px solid #161616;
 }
 
 @font-face {
@@ -166,8 +167,8 @@ iframe {
     #menutoggle {
         display: block;
         position: fixed;
-        top: 0;
-        right: 15px;
+        top: 8px;
+        right: 10px;
         z-index: 2;
     }
     
@@ -178,16 +179,9 @@ iframe {
     .gallery div:first-child {
         grid-column: initial;
         grid-row: initial;
-        height: 200px;
-    }
-}
-
-@media only screen and (width <= 500px) {
-    .gallery {
-        grid-template-columns: initial;
     }
 
-    .gallery div {
-        height: initial;
+    .gallery div, .gallery div:first-child {
+        height: 40vw;
     }
 }

@@ -48,6 +48,10 @@ nav {
 
 nav ul {
     list-style-type: none;
+    margin: 10px 0;
+}
+
+nav ul li {
     margin: 5px 0;
 }
 
@@ -166,8 +170,12 @@ a:hover {
     #menutoggle {
         display: block;
         position: fixed;
-        top: 10px;
+        top: 6px;
         right: 10px;
         z-index: 2;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
