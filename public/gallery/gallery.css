@@ -42,7 +42,7 @@ nav a {
 footer {
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
 }
 
 footer a {
@@ -105,7 +105,7 @@ iframe {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 4;
+    z-index: 5;
 }
 
 #lightbox.active {
@@ -140,7 +140,29 @@ iframe {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: 3px solid #161616;
+}
+
+.censor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: -30vh;
+    max-height: 30vh;
+    backdrop-filter: blur(25px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.censor span {
+    font-size: 1.2rem;
+    background-color: #282828;
+    padding: 8px 12px;
+}
+
+.gallery div:first-child .censor{
+    margin-bottom: -60vh;
+    max-height: 60vh;
 }
 
 @font-face {
@@ -156,7 +178,7 @@ iframe {
         left: 0;
         width: 70vw;
         height: 100vh;
-        z-index: 3;
+        z-index: 4;
         box-shadow: 0 0 12px #000;
     }
 
@@ -169,7 +191,7 @@ iframe {
         position: fixed;
         top: 8px;
         right: 10px;
-        z-index: 2;
+        z-index: 3;
     }
     
     .gallery {
@@ -183,5 +205,14 @@ iframe {
 
     .gallery div, .gallery div:first-child {
         height: 40vw;
+    }
+
+    .censor, .gallery div:first-child .censor{
+        max-height: 40vw;
+        margin-bottom: -40vw;
+    }
+
+    .censor span {
+        font-size: 1rem;
     }
 }
