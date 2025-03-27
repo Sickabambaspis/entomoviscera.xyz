@@ -24,7 +24,7 @@ nav {
     align-items: center;
     padding: 25px;
     gap: 15px 25px;
-    background-image: url("/assets/bg/smiley.png");
+    background-image: url("/assets/bg/smiley.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

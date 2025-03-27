@@ -15,7 +15,7 @@
 body {
     padding: 25px 15px;
     background-color: var(--black);
-    background-image: url("/assets/bg/smiley.png");
+    background-image: url("/assets/bg/smiley.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
