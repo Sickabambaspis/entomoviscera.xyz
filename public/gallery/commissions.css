@@ -5,8 +5,38 @@
     box-sizing: border-box;
 }
 
-h1, h2, p {
-    margin: 5px 0;
+body {
+    font-family: "lucida console", monospace, serif;
+    color: #ebebeb;
+    background-color: #161616;
+    background-image: url("/assets/bgtile/paperoverlay.png");
+}
+
+header, main, footer {
+    padding: 8px 12px;
+}
+
+header, footer {
+    text-align: center;
+}
+
+main {
+    background-color: #282828;
+}
+
+footer a {
+    color: #ebebeb;
+    text-decoration: none;
+    text-shadow: 4px 4px 2px #000;
+    transition: opacity 200ms;
+}
+
+footer a:hover {
+    opacity: 0.6;
+}
+
+h1, h2 {
+    margin-bottom: 5px;
 }
 
 h1 {
@@ -17,6 +47,20 @@ h2 {
     font-size: 1.6rem;
 }
 
+p, a {
+    font-size: 1rem;
+}
+
+p {
+    margin: 5px 0;
+}
+
 #wrapper {
     max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
