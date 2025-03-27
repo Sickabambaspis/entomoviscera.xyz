@@ -71,10 +71,11 @@ a:hover {
 }
 
 .pinned {
-    float: right;
-    position: relative;
-    margin: -8px 15px 0 -15px;
-    z-index: 4;
+    position: absolute;
+    top: 56px;
+    margin-left: 12px;
+    rotate: -14deg;
+    pointer-events: none;
 }
 
 .center {
