@@ -7,6 +7,13 @@
 		<description>I make silly creature art lol.</description>
 
 		<item>
+			<title>V1.3</title>
+			<link>https://www.entomoviscera.xyz/</link>
+			<description>The update log page has been removed so everything's here in one place. Figured out how to parse xml. I don't have to manually update three separate files anymore. Also I have a guestbook now feel free to check it out.</description>
+			<pubDate>Mon, 31 Mar 2025 01:00:00 +0100</pubDate>
+		</item>
+
+		<item>
 			<title>V1.2</title>
 			<link>https://www.entomoviscera.xyz/</link>
 			<description>Replaced graphics here and there for more fun. On mobile the menu button is now a mushroom.</description>

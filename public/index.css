@@ -113,6 +113,11 @@ a:hover {
     margin: 0 auto;
 }
 
+#rssfeed {
+    height: 300px;
+    overflow-y: scroll;
+}
+
 .sillyborder {
     border: 2px dashed var(--grey);
     padding: 15px;
@@ -130,6 +135,10 @@ a:hover {
 
 .sillyborder h3 {
     margin-top: 0;
+}
+
+.sillyborder p:last-child {
+    margin-bottom: 0;
 }
 
 .flex {

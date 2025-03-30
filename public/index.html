@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/index.css">
         <link rel="icon" href="/assets/pixels/ghoulfavicon.png">
         <script defer src="/assets/scripts/mainnav.js"></script>
+        <script onload="loadXML()" src="/rssparser.js"></script>
     </head>
     <body>
         <button id="menutoggle" onclick="menutoggle()"><img src="/assets/img/mushroom.png" alt="menu toggle"></button>
@@ -32,6 +33,7 @@
                 <h3>Site related</h3>
                 <ul>
                     <li><a href="/infocredits/index.html">Info and credits</a></li>
+                    <li><a href="https://entomoviscera.atabook.org/">Guestbook</a></li>
                     <li><a href="https://github.com/Sickabambaspis/entomoviscera.xyz">Source code</a></li>
                 </ul>
             </nav>
@@ -42,11 +44,9 @@
                 <h2>Disclaimer</h2>
                 <p>None yet as of now. But I'd still prefer if you're under 18 to avoid my website thank you.</p>
                 <h2>Latest updates</h2>
+                <div class="sillyborder" id="rssfeed"></div>
                 <div class="sillyborder">
-                    <h3>V1.2 - 30/3/2025</h3>
-                    <p>Replaced graphics here and there for more fun. On mobile the menu button is now a mushroom.</p>
-                    <a href="/rss.xml"><img src="/assets/img/rss.png" alt="rss feed" style="height: 16px; margin-right: 5px;"></a>
-                    <a href="/updatelogs/index.html">See all logs</a>
+                    <a href="/rss.xml"><img src="/assets/img/rss.png" alt="rss feed" style="height: 1rem; margin-bottom: -1px;"> RSS feed</a>
                 </div>
             </main>
             <footer>
@@ -56,6 +56,7 @@
                 <a href="https://entomoviscera.newgrounds.com/"><img src="/assets/img/newgroundslogo.png" alt="newgrounds" class="imgtilt"></a>
                 <!--a href="https://www.pixiv.net/en/users/114073733"><img src="assets/img/pixivlogo.png" alt="pixiv" class="imgtilt"></a-->
                 <a href="https://www.youtube.com/@entomoviscera"><img src="/assets/img/youtubelogo.png" alt="youtube" class="imgtilt"></a>
+                <p>Contact: entomoviscera@protonmail.com</p>
             </footer>
         </div>
     </body>
