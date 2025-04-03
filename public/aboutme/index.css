@@ -33,6 +33,10 @@ aside {
     padding: 10px;
 }
 
+h1, h2 {
+    margin-bottom: 15px;
+}
+
 h1, h2, h3, .profile span {
     font-family: underwood;
 }
@@ -91,6 +95,13 @@ a:hover {
     color: var(--white);
     background-color: var(--black);
     padding: 2px 4px;
+}
+
+.return {
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    z-index: 2;
 }
 
 @font-face {
